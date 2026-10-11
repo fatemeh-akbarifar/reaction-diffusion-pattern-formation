@@ -1,0 +1,81 @@
+{
+  "checks": {
+    "uniform_equilibrium_error": 0.0,
+    "reaction_only_error": 5.357934427796529e-06,
+    "diffusion_mean_error": 0.0
+  },
+  "refinement": [
+    {
+      "check": "time step",
+      "relative_std_difference": 1.5564594008079915e-05,
+      "relative_wavelength_difference": 0.0,
+      "passed": true,
+      "coarse": {
+        "Dv": 10,
+        "seed": 0,
+        "grid": 64,
+        "dt": 0.02,
+        "smooth_initial": false,
+        "final_time": 400,
+        "final_std": 0.3057067974722737,
+        "wavelength": 11.09400392450458,
+        "settled": true,
+        "extension_reason": "Final 25-unit window failed settling criteria"
+      },
+      "fine": {
+        "Dv": 10,
+        "seed": 0,
+        "grid": 64,
+        "dt": 0.01,
+        "smooth_initial": false,
+        "final_time": 400,
+        "final_std": 0.30570203934414386,
+        "wavelength": 11.09400392450458,
+        "settled": true,
+        "extension_reason": ""
+      }
+    },
+    {
+      "check": "spatial grid",
+      "relative_std_difference": 1.1799935304633352e-14,
+      "relative_wavelength_difference": 0.0,
+      "passed": true,
+      "coarse": {
+        "Dv": 10,
+        "seed": 0,
+        "grid": 64,
+        "dt": 0.02,
+        "smooth_initial": true,
+        "final_time": 400,
+        "final_std": 0.3057834417630166,
+        "wavelength": 11.09400392450458,
+        "settled": true,
+        "extension_reason": ""
+      },
+      "fine": {
+        "Dv": 10,
+        "seed": 0,
+        "grid": 128,
+        "dt": 0.02,
+        "smooth_initial": true,
+        "final_time": 400,
+        "final_std": 0.3057834417630202,
+        "wavelength": 11.09400392450458,
+        "settled": true,
+        "extension_reason": ""
+      }
+    }
+  ],
+  "supported_unstable_k_squared": [
+    0.2220660990245106,
+    0.246740110027234,
+    0.3207621430354042,
+    0.3947841760435743,
+    0.41945818704629767,
+    0.4441321980490212,
+    0.4934802200544679
+  ],
+  "python": "3.9.13",
+  "numpy": "1.23.5",
+  "source_sha256": "8a4363d8ea395d7e7e9dff68938c3bf5643dec3ef13907adc34612455f228b57"
+}
